@@ -1,0 +1,13 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>inline block</title>
+    </head>
+<body>
+    <h1>click me</h1>
+    a{
+        font 
+    }
+</body>
+
+</html>

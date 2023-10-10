@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Responsive Gallery</title>
+     <style>
+         
+         * {
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+         }
+ 
+         
+         body {
+             font-family: Arial, sans-serif;
+             background-color: #f4f4f4;
+             margin: 0;
+         }
+ 
+         
+         .header {
+             background-color: #f59222;
+             color: #fff;
+             padding: 20px;
+             text-align: center;
+         }
+ 
+         
+         .navbar {
+             background-color: #000000;
+             overflow: hidden;
+         }
+        
+        .navbar a {
+             float: left;
+             display: block;
+             color: #f2f2f2;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+         }
+ 
+         
+         .navbar a:hover {
+             background-color: #ffffff;
+             color: rgb(255, 6, 6);
+         }
+ 
+         
+         .gallery-container {
+             background-color: #fff;
+             padding: 20px;
+             text-align: center;
+         }
+ 
+         
+         .gallery-img {
+             max-width: 100%;
+             height: auto;
+             border-radius: 10px;
+             margin: 10px;
+             transition: transform 0.3s ease;
+             cursor: pointer;
+         }
+      
+      .gallery-img:hover {
+             transform: scale(1.1);
+         }
+ 
+         /* Create a flex container for the row of images */
+         .gallery-row {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;
+         }
+ 
+         /* Media queries for responsiveness */
+         @media (max-width: 768px) {
+             /* Adjust navigation bar padding */
+             .navbar a {
+                 padding: 10px;
+             }
+ 
+             /* Make images full width on smaller screens */
+             .gallery-img {
+                 width: 100%;
+             }
+         }
+         @media (max-width: 480px) {
+             /* Further adjustments for smaller screens */
+             .navbar a {
+                 padding: 8px;
+                 font-size: 14px;
+             }
+         }
+     </style>
+ </head>
+ <body>
+ 
+ <!-- Header Section -->
+ <div class="header">
+     <h1>Responsive Gallery</h1>
+ </div>
+ 
+ <!-- Navigation Bar -->
+ <div class="navbar">
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Gallery</a>
+     <a href="#">Contact</a>
+ </div>
+<!-- Gallery Section -->
+<div class="gallery-container">
+    <div class="gallery-row">
+        <!-- Gallery Images -->
+        <img src="image1.jpg" alt="Image 1" class="gallery-img">
+        <img src="image2.jpg" alt="Image 2" class="gallery-img">
+        <img src="image3.jpg" alt="Image 3" class="gallery-img">
+        <img src="image4.jpg" alt="Image 4" class="gallery-img">
+        <img src="image5.jpg" alt="Image 5" class="gallery-img">
+        <img src="image6.jpg" alt="Image 6" class="gallery-img">
+    </div>
+</div>
+
+</body>
+ </html>
